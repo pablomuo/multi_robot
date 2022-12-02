@@ -1,0 +1,58 @@
+<launch>
+    <arg name="agent_name"/>
+    <arg name="init_pose"/>
+
+    <node name="spawn_model" pkg="gazebo_ros" type="spawn_model"
+     args="$(arg init_pose) -urdf -param /robot_description -model $(arg agent_name)"
+     respawn="false" output="screen" />
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher"
+          name="robot_state_publisher" output="screen"/>
+
+    <group if="$(eval agent_name == 'agent1')">
+        <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan_$(arg agent_name)">
+
+            <remap from="/$(arg agent_name)/cloud_in" to="/$(arg agent_name)/camera/depth/points"/>
+            <remap from="/$(arg agent_name)/scan" to="/$(arg agent_name)/camera"/>
+            <rosparam>
+                target_frame: agent1_tf/camera_link
+                transform_tolerance: 0.01
+                min_height: 0.0
+                max_height: 1.0
+                angle_min: -0.9471975512  #-1.0471975512
+                angle_max:  1.1471975512  #1.0471975512
+                angle_increment: 0.233
+                scan_time: 1.0/30.0
+                range_min: 0.00
+                range_max: 3.5
+                concurrency_level: 1
+                use_inf: true
+            </rosparam>
+          </node>
+    </group>
+
+    <group if="$(eval agent_name == 'agent2')">
+        <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan_$(arg agent_name)">
+
+              <remap from="/$(arg agent_name)/cloud_in" to="/$(arg agent_name)/camera/depth/points"/>
+              <remap from="/$(arg agent_name)/scan" to="/$(arg agent_name)/camera"/>
+              <rosparam>
+                  target_frame: agent2_tf/camera_link
+                  transform_tolerance: 0.01
+                  min_height: 0.0
+                  max_height: 1.0
+                  angle_min: -0.9471975512  #-1.0471975512
+                  angle_max:  1.1471975512  #1.0471975512
+                  angle_increment: 0.233
+                  scan_time: 1.0/30.0
+                  range_min: 0.00
+                  range_max: 3.5
+                  concurrency_level: 1
+                  use_inf: true
+              </rosparam>
+          </node>
+    </group>
+
+    <node pkg="multi_robot" type="camera_laser_sync.py" name="camera_laser_sync" output="screen" />
+  <!-- <node pkg="multi_robot" type="camera_sync1.py" name="camera_sync1" output="screen" /> -->
+</launch>

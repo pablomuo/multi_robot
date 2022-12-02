@@ -1,0 +1,95 @@
+Unable to register with master node [http://localhost:11311]: master may not be running yet. Will keep trying.
+... logging to /home/pablo/.ros/log/98ee8e3c-5c35-11ed-b292-70188b656583/roslaunch-pablo-Aspire-E1-571-19533.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/pablo/catkin_ws/src/multi_robot/launch/turtlebot3_multi.launch
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+[1mstarted roslaunch server http://pablo-Aspire-E1-571:33987/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent1/tf_prefix: agent1_tf
+ * /gazebo/enable_ros_network: True
+ * /robot_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+  /agent1/
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    spawn_model (gazebo_ros/spawn_model)
+
+auto-starting new master
+[1mprocess[master]: started with pid [19597][0m
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+[master] killing on exit
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training
+21 Sleeping
+10 Training

@@ -1,0 +1,1000 @@
+ 1005  rostopic echo /class_name
+ 1006  source activate test1
+ 1007  cd Detection
+ 1008  cd yolov5/
+ 1009  python detect.py --source 0
+ 1010  roscore
+ 1011  source activate test1
+ 1012  rostopic list
+ 1013  rostopic echo /class_name 
+ 1014  cd Detection/yolov5/
+ 1015  python detect.py --source 0
+ 1016  rostopic list
+ 1017  rostopic echo /class_name
+ 1018  conda activate test1
+ 1019  source activate test1
+ 1020  rostopic echo /class_name
+ 1021  cd Detection/yolov5/
+ 1022  ls
+ 1023  python detect.py 
+ 1024  roscore
+ 1025  source activate test1
+ 1026  python detect.py --source 0
+ 1027  source activate test1
+ 1028  python detect.py --source 0
+ 1029  source activate test1
+ 1030  rostopic echo /class_name
+ 1031  python detect.py --source 0
+ 1032  source activate test1
+ 1033  ls
+ 1034  rostopic echo /class_name 
+ 1035  python detect.py --source 0
+ 1036  source activate test1
+ 1037  rostopic echo /class_name
+ 1038  rostopic echo /class_name 
+ 1039  roscore
+ 1040  rostopic echo /class_name 
+ 1041  roscore
+ 1042  htop
+ 1043  cd src/
+ 1044  ls
+ 1045  cd collaborative_agents/
+ 1046  ls
+ 1047  cd nodes/
+ 1048  lsc
+ 1049  touch threading.py
+ 1050  cd
+ 1051  cd catkin_ws
+ 1052  source devel/setup.bash 
+ 1053  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1054  ls -a
+ 1055  cd .ssh/
+ 1056  ls
+ 1057  sudo nautilus
+ 1058  ls
+ 1059  gedit id_ecdsa
+ 1060  gedit id_ecdsa.pub 
+ 1061  gedit id_rsa.pub 
+ 1062  htop
+ 1063  cd catkin_ws
+ 1064  source activate ubu18
+ 1065  ls
+ 1066  cd src/
+ 1067  ls
+ 1068  cd collaborative_agents/
+ 1069  ls
+ 1070  cd nodes/
+ 1071  ls
+ 1072  touch Algorithm
+ 1073  source 
+ 1074  cd 
+ 1075  cd catkin_ws
+ 1076  source devel/setup.bash 
+ 1077  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1078  source devel/setup.bash 
+ 1079  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1080  catkin build
+ 1081  source devel/setup.bash 
+ 1082  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1083  git status
+ 1084  cd src/
+ 1085  cd collaborative_agents/
+ 1086  ls
+ 1087  git status
+ 1088  git add -A
+ 1089  git status
+ 1090  git commit -m "One target for each robot"
+ 1091  git push
+ 1092  source activate test1
+ 1093  cd
+ 1094  cd Detection
+ 1095  cd yolov5/
+ 1096  python detect.py --source 0
+ 1097  source activate test1
+ 1098  python detect.py --source 0
+ 1099  roscore
+ 1100  source activate test1
+ 1101  python detect.py --source 0
+ 1102  source activate test1
+ 1103  python detect.py --source 0
+ 1104  cd
+ 1105  source activate test1
+ 1106  cd Detection
+ 1107  cd yolov5/
+ 1108  ls
+ 1109  python detect.py --source 0
+ 1110  cd
+ 1111  source activate test1
+ 1112  roscore
+ 1113  python detect.py --source 1
+ 1114  cd Detection
+ 1115  cd yolov5/
+ 1116  python detect.py --source 1
+ 1117  python detect.py --source 0
+ 1118  gedit /home/mcg0102/Detection/yolov5/utils/dataloaders.py"
+ 1119  cd utils/
+ 1120  gedit dataloaders.py 
+ 1121  cd ..
+ 1122  python detect.py --source 0
+ 1123  cd utils/
+ 1124  gedit dataloaders.py &
+ 1125  cd ..
+ 1126  python detect.py --source 0
+ 1127  cd utils/
+ 1128  ls
+ 1129  sudo nautilus &
+ 1130  cd ..
+ 1131  python detect.py --source 0
+ 1132  roscore
+ 1133  roscore
+ 1134  source activate test1
+ 1135  ls
+ 1136  cd src/
+ 1137  cd
+ 1138  cd Detection
+ 1139  cd yolov5/
+ 1140  ls
+ 1141  python cam.py 
+ 1142  source activate ubu18
+ 1143  cd catkin_ws
+ 1144  cd src/collaborative_agents/
+ 1145  ls
+ 1146  cd nodes/
+ 1147  cd
+ 1148  cd catkin_ws
+ 1149  source devel/setup.bash 
+ 1150  cd src/collaborative_agents/
+ 1151  cd nodes/
+ 1152  ls
+ 1153  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1154  source activate ubu18
+ 1155  rostopic echo /agent1/scan 
+ 1156  rostopic echo /agent2/scan 
+ 1157  cd catkin_ws
+ 1158  source devel/setup.bash 
+ 1159  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1160  cd
+ 1161  cd catkin_ws
+ 1162  source acyivate ubu18
+ 1163  source activate ubu18
+ 1164  source devel/setup.bash 
+ 1165  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1166  cd src/collaborative_agents/
+ 1167  grep -rin "rospy.Subscriber" *.py
+ 1168  ls
+ 1169  cd nodes/
+ 1170  grep -rin "rospy.Subscriber" *
+ 1171  grep -rin "rospy.Publisher" *
+ 1172  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1173  htop
+ 1174  cd catkin_ws
+ 1175  source activate ubu18
+ 1176  source devel/setup.bash 
+ 1177  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1178  catkin build
+ 1179  source devel/setup.bash 
+ 1180  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1181  htip
+ 1182  htop
+ 1183  cd catkin_ws
+ 1184  source activate ubu18
+ 1185  source devel/setup.bash 
+ 1186  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1187  catkin build
+ 1188  source devel/setup.bash 
+ 1189  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1190  catkin build
+ 1191  source devel/setup.bash 
+ 1192  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1193  catkin build
+ 1194  source devel/setup.bash 
+ 1195  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1196  cd src/collaborative_agents/
+ 1197  ls
+ 1198  git status
+ 1199  git add -A
+ 1200  git commit -m "new topic for laser"
+ 1201  git push
+ 1202  roslaunch collaborative_agents turtlebot3_collaborative.launch 
+ 1203  source activate ubu18
+ 1204  rostopic list
+ 1205  rostopic echo /agent1/scan_out 
+ 1206  rostopic list
+ 1207  rostopic echo /agent1/scan_out 
+ 1208  rostopic list
+ 1209  rostopic echo /agent1/scan_out 
+ 1210  source activate ubu18
+ 1211  rosservice call /gazebo/reset_simulation 
+ 1212  rosservice call /gazebo/reset_simulation "{}" 
+ 1213  rosservice call /gazebo/reset_world "{}" 
+ 1214  git status
+ 1215  cd catkin_ws
+ 1216  cd src/
+ 1217  cd collaborative_agents/
+ 1218  ls
+ 1219  git status
+ 1220  git diff nodes/agents.py
+ 1221  rosrun tf view_frames
+ 1222  source activate ubu18
+ 1223  rosrun tf view_frames
+ 1224  evince frames.pdf
+ 1225  rostopic list
+ 1226  htop
+ 1227  htop
+ 1228  sudo kill -9 30792
+ 1229  sudo kill -9 30791
+ 1230  sudo kill -9 30794
+ 1231  sudo kill -9 30793
+ 1232  source activate ubu18
+ 1233  rosrun tf view_frames
+ 1234  evince frames.pdf
+ 1235  rosrun tf view_frames
+ 1236  evince frames.pdf
+ 1237  cd catkin_ws
+ 1238  catkin build
+ 1239  source devel/setup.bash 
+ 1240  cd src/multi_robot/nodes/
+ 1241  cd ..
+ 1242  catkin build
+ 1243  source devel/setup.bash 
+ 1244  cd src/multi_robot/nodes/
+ 1245  mpiexec -n 6 python main.py
+ 1246  cd
+ 1247  cd catkin_ws
+ 1248  cartkin build
+ 1249  catkin build
+ 1250  source devel/setup.bash 
+ 1251  mpiexec -n 6 src/multi_robot/nodes/python main.py
+ 1252  cd src/
+ 1253  ls
+ 1254  cd multi_robot/nodes/
+ 1255  mpiexec -n 6 /python main.py
+ 1256  mpiexec -n 6 python main.py
+ 1257  cd
+ 1258  cd catkin_ws
+ 1259  catkin build
+ 1260  source devel/setup.bash 
+ 1261  mpiexec -n 6 python /src/multi_robot/nodes/main.py
+ 1262  mpiexec -n 6 python ~src/multi_robot/nodes/main.py
+ 1263  mpiexec -n 6 python ~/src/multi_robot/nodes/main.py
+ 1264  mpiexec -n 6 python home/src/multi_robot/nodes/main.py
+ 1265  mpiexec -n 6 python catkin_ws/src/multi_robot/nodes/main.py
+ 1266  cd src/multi_robot/nodes/
+ 1267  mpiexec -n 6 python main.py
+ 1268  cd 
+ 1269  cd catkin_ws
+ 1270  catkin build
+ 1271  source devel/setup.bash 
+ 1272  cd src/multi_robot/nodes/
+ 1273  mpiexec -n 6 python main.py
+ 1274  mpiexec -n 5 python main.py
+ 1275  source actvate ubu18
+ 1276  source activate ubu18
+ 1277  import matplotlib.colors as mcolors
+ 1278  python
+ 1279  import 
+ 1280  import matplotlib.colors as mcolors
+ 1281  ls
+ 1282  python many_robots.py 4
+ 1283  mpiexec -n 5 python main.py
+ 1284  cd
+ 1285  cd catkin_ws
+ 1286  catkin build
+ 1287  source devel/setup.bash 
+ 1288  cd src/
+ 1289  ls
+ 1290  cd multi_robot/
+ 1291  ls
+ 1292  cd nodes/
+ 1293  mpiexec -n 5 python main.py
+ 1294  cd
+ 1295  cd catkin_ws
+ 1296  catkin build
+ 1297  source devel/setup.bash 
+ 1298  cd src/multi_robot/nodes/
+ 1299  mpiexec -n 5 python main.py
+ 1300  cd catkin_ws
+ 1301  cd src/
+ 1302  cd ddrl_ge/
+ 1303  gedit .gitignore 
+ 1304  ls
+ 1305  cd src/
+ 1306  ls
+ 1307  cd
+ 1308  cd catkin_ws
+ 1309  cd src/
+ 1310  cd multi_robot/
+ 1311  ls
+ 1312  source activate ubu18
+ 1313  cd .ssh/
+ 1314  ls
+ 1315  gedit id_ecdsa
+ 1316  gedit id_ecdsa.pub 
+ 1317  gedit id_rsa
+ 1318  gedit id_ecdsa
+ 1319  gedit id_rsa.pub 
+ 1320  gedit id_ecdsa
+ 1321  gedit id_ecdsa.pub 
+ 1322  python
+ 1323  ls -a
+ 1324  cd .atom/
+ 1325  ls
+ 1326  sudo nano
+ 1327  sudo nautilus
+ 1328  ls
+ 1329  cd ..
+ 1330  sudo apt install gnome-shell-extension-system-monitor 
+ 1331  sudo apt install gnome-tweaks
+ 1332  gnome-tweaks 
+ 1333  cd ..
+ 1334  cd
+ 1335  sudo apt-get install geany
+ 1336  cd catkin_ws
+ 1337  cd src/
+ 1338  cd multi_robot/
+ 1339  ls
+ 1340  cd save_model/
+ 1341  ls
+ 1342  geany environment__value_agent_2.txt 
+ 1343  cd ..
+ 1344  cd status
+ 1345  git status
+ 1346  gedit .gitignore 
+ 1347  git status
+ 1348  git add -A 
+ 1349  git status
+ 1350  git commit -m "one robot testing "
+ 1351  git push
+ 1352  git status
+ 1353  git add -AA
+ 1354  git add -A
+ 1355  git status
+ 1356  git commit -m "testing"
+ 1357  git push
+ 1358  source activate ubu18
+ 1359  python -V
+ 1360  rostopic list
+ 1361  rostopic echo /agent0/cmd_vel /
+ 1362  rostopic echo /agent0/cmd_vel 
+ 1363  git status
+ 1364  git add -a nodes/agents.py
+ 1365  git add -a nodes/agents.py 
+ 1366  git add nodes/agents.py 
+ 1367  git commit -m " "
+ 1368  git commit -m "laser "
+ 1369  git status
+ 1370  rostopic echo /agent0/cmd_vel 
+ 1371  rostopic echo /agent0/cmd_vel /
+ 1372  rostopic echo /agent0/cmd_vel 
+ 1373  git status
+ 1374  git add -A
+ 1375  git commit -m "test2 wrong collision"
+ 1376  git push
+ 1377  python
+ 1378  cd catkin_ws
+ 1379  source devel/setup.bsa
+ 1380  source devel/setup.bash 
+ 1381  ls
+ 1382  cd src/
+ 1383  ls
+ 1384  cd multi_robot/
+ 1385  ls
+ 1386  cd nodes/
+ 1387  mpiexec -n 5 python main.py
+ 1388  source activate ubu18
+ 1389  mpiexec -n 5 python main.py
+ 1390  clear
+ 1391  mpiexec -n 5 python main.py
+ 1392  clear
+ 1393  mpiexec -n 5 python main.py
+ 1394  clear
+ 1395  mpiexec -n 5 python main.py
+ 1396  clear
+ 1397  mpiexec -n 5 python main.py
+ 1398  clar
+ 1399  clear
+ 1400  mpiexec -n 5 python main.py
+ 1401  clear
+ 1402  mpiexec -n 5 python main.py
+ 1403  clear
+ 1404  mpiexec -n 5 python main.py
+ 1405  clear
+ 1406  mpiexec -n 5 python main.py
+ 1407  clear
+ 1408  mpiexec -n 5 python main.py
+ 1409  clear
+ 1410  mpiexec -n 5 python main.py
+ 1411  mpiexec -n 3 python main.py
+ 1412  clear
+ 1413  mpiexec -n 3 python main.py
+ 1414  clear
+ 1415  mpiexec -n 3 python main.py
+ 1416  clear
+ 1417  mpiexec -n 3 python main.py
+ 1418  clear
+ 1419  mpiexec -n 3 python main.py
+ 1420  cd ..
+ 1421  cd multi_robot/
+ 1422  git status
+ 1423  git add -A
+ 1424  git status
+ 1425  ls
+ 1426  cd nodes/
+ 1427  ls
+ 1428  cd ..
+ 1429  ls
+ 1430  cd .
+ 1431  cd ..
+ 1432  ls
+ 1433  cd collaborative_agents/
+ 1434  ls
+ 1435  cd nodes/
+ 1436  ls
+ 1437  cd ..
+ 1438  cd multi_robot/
+ 1439  ls
+ 1440  touch .gitignore
+ 1441  gedit .gitignore 
+ 1442  cd ..
+ 1443  cd collaborative_agents/
+ 1444  gedit .gitignore 
+ 1445  cd ..
+ 1446  cd ddrl_ge/
+ 1447  gedit .gitignore 
+ 1448  cd ..
+ 1449  cd multi_robot/
+ 1450  gedit .gitignore 
+ 1451  git status
+ 1452  git add -A
+ 1453  git status
+ 1454  git commit -m "working one agent"
+ 1455  git push
+ 1456  cd nodes/
+ 1457  mpiexec -n 3 python main.py
+ 1458  ls
+ 1459  cd ..
+ 1460  ls
+ 1461  cd save_model/
+ 1462  ls
+ 1463  geany environment__value_agent_2.txt 
+ 1464  cd  ..
+ 1465  cd nodes/
+ 1466  mpiexec -n 3 python main.py
+ 1467  mpiexec -n 0 python main.py
+ 1468  mpiexec -n 1 python main.py
+ 1469  mpiexec -n 2 python main.py
+ 1470  CLEAR
+ 1471  clear
+ 1472  mpiexec -n 2 python main.py
+ 1473  clear
+ 1474  mpiexec -n 2 python main.py
+ 1475  clear
+ 1476  mpiexec -n 2 python main.py
+ 1477  clear
+ 1478  mpiexec -n 2 python main.py
+ 1479  mpiexec -n 3 python main.py
+ 1480  clear
+ 1481  mpiexec -n 3 python main.py
+ 1482  clear
+ 1483  mpiexec -n 3 python main.py
+ 1484  clear
+ 1485  mpiexec -n 3 python main.py
+ 1486  clear
+ 1487  mpiexec -n 3 python main.py
+ 1488  clear
+ 1489  mpiexec -n 3 python main.py
+ 1490  clear
+ 1491  mpiexec -n 3 python main.py
+ 1492  clear
+ 1493  mpiexec -n 3 python main.py
+ 1494  clear
+ 1495  mpiexec -n 3 python main.py
+ 1496  clear
+ 1497  mpiexec -n 3 python main.py
+ 1498  mpiexec -n 1 python main.py
+ 1499  mpiexec -n 3 python main.py
+ 1500  mpiexec -n 1 python main.py
+ 1501  piexec -n 1 python main.py
+ 1502  mpiexec -n 1 python main.py
+ 1503  piexec -n 1 python main.py
+ 1504  mpiexec -n 1 python main.py
+ 1505  piexec -n 1 python main.py
+ 1506  mpiexec -n 1 python main.py
+ 1507  piexec -n 1 python main.py
+ 1508  mpiexec -n 1 python main.py
+ 1509  clear
+ 1510  mpiexec -n 1 python main.py
+ 1511  clear
+ 1512  mpiexec -n 1 python main.py
+ 1513  lear
+ 1514  mpiexec -n 1 python main.py
+ 1515  clear
+ 1516  mpiexec -n 1 python main.py
+ 1517  git add -A 
+ 1518  git commit -m "chechk done"
+ 1519  gi
+ 1520  git commit -m "check done"
+ 1521  git push
+ 1522  cd ..
+ 1523  ls
+ 1524  cd multi_robot/nodes/
+ 1525  mpiexec -n 1 python main.py
+ 1526  clear
+ 1527  mpiexec -n 1 python main.py
+ 1528  cclear
+ 1529  clear
+ 1530  mpiexec -n 1 python main.py
+ 1531  git add -A 
+ 1532  git commit -m "fix done"
+ 1533  git push
+ 1534  mpiexec -n 1 python main.py
+ 1535  cd catkin_ws
+ 1536  ls
+ 1537  cd src/
+ 1538  source activate ubu18
+ 1539  cd multi_robot/
+ 1540  ls
+ 1541  cd nodes/
+ 1542  ls
+ 1543  mpiexec -n 1 python main.py
+ 1544  cd
+ 1545  cd catkin_ws
+ 1546  source devel/setup.bash 
+ 1547  cd src/multi_robot/nodes/
+ 1548  ls
+ 1549  mpiexec -n 1 python main.py
+ 1550  mpiexec -n 2 python main.py
+ 1551  cd catkin_ws
+ 1552  source devel/setup.bash 
+ 1553  source activate ubu18
+ 1554  cd src/
+ 1555  cd multi_robot/
+ 1556  ls
+ 1557  cd nodes/
+ 1558  mpiexec -n 2 python main.py
+ 1559  git status
+ 1560  gi add -A
+ 1561  git add -A
+ 1562  git status
+ 1563  git commit -m "one server as brain"
+ 1564  git push
+ 1565  cd catkin_ws
+ 1566  source devel/setup.bsa
+ 1567  source devel/setup.bash 
+ 1568  cd src/
+ 1569  ls
+ 1570  cd multi_robot/
+ 1571  ls
+ 1572  cd s
+ 1573  cd nodes/
+ 1574  conda activate ubu18
+ 1575  source activate ubu18
+ 1576  mpiexec -n 2 python main.py
+ 1577  mpiexec -n 3 python main.py
+ 1578  mpiexec -n 4 python main.py
+ 1579  cd
+ 1580  cd catkin_ws
+ 1581  catkin build
+ 1582  cd src/
+ 1583  ls
+ 1584  cd multi_robot/
+ 1585  ls
+ 1586  cd nodes/
+ 1587  ls
+ 1588  mpiexec -n 4 python main.py    def get_heading_r2_r1(self):
+ 1589  mpiexec -n 4 python main.py   
+ 1590  mpiexec -n 2 python main.py   
+ 1591  mpiexec -n 3 python main.py   
+ 1592  cd ..
+ 1593  git status
+ 1594  git add -A 
+ 1595  git commit -m "one robot working" 
+ 1596  git push
+ 1597  cd catkin_ws
+ 1598  cd src/
+ 1599  cd multi_robot/nodes/
+ 1600  ls
+ 1601  cd ..
+ 1602  ls
+ 1603  git status
+ 1604  source activate ubu18
+ 1605  touch test_g.py
+ 1606  gedit test
+ 1607  gedit test_g.py 
+ 1608  atom test_g.py 
+ 1609  mpiexec -n 3 python test_g.py 
+ 1610  AttributeError: 'mpi4py.MPI.Intracomm' object has no attribute 'igather'
+ 1611  mpiexec -n 3 python test_g.py 
+ 1612  cleat
+ 1613  clear
+ 1614  mpiexec -n 3 python test_g.py 
+ 1615  mpiexec -n 2 python test_g.py 
+ 1616  mpiexec -n 3 python test_g.py 
+ 1617  mpiexec -n 2 python test_g.py 
+ 1618  mpiexec -n 3 python test_g.py 
+ 1619  mpiexec -n 4 python test_g.py 
+ 1620  mpiexec -n 3 python test_g.py 
+ 1621  mpiexec -n 2 python test_g.py 
+ 1622  mpiexec -n 3 python test_g.py 
+ 1623  source activate ubu18
+ 1624  mpiexec -n 4 python test_g.py 
+ 1625  mpiexec -n 3 python test_g.py 
+ 1626  mpiexec -n 2 python test_b.py 
+ 1627  mpiexec -n 3 python test_b.py 
+ 1628  mpiexec -n 3 python test_g.py 
+ 1629  mpiexec -n 3 python test_b.py 
+ 1630  python test_b.py 
+ 1631  cd catkin_ws
+ 1632  source devel/setup.bash 
+ 1633  cd src/
+ 1634  ls
+ 1635  cd multi_robot/
+ 1636  ls
+ 1637  cd nodes/
+ 1638  python main.py 
+ 1639  sudo nautilus
+ 1640  cd /usr/local/share/ca-certificates/
+ 1641  ls
+ 1642  sudo update-ca-certificates 
+ 1643  sudo cpfoo. crt /usr/local/share/ca-certificates/Y6514718M_MARITZA\ ELIZABETH_PALACIOS_ciudadano_1657527813225.p12. crt
+ 1644  sudo cpfoo. crt /usr/local/share/ca-certificates/Y6514718M_MARITZA\ ELIZABETH_PALACIOS_ciudadano_1657527813225.p12
+ 1645  sudo cp /usr/local/share/ca-certificates/Y6514718M_MARITZA\ ELIZABETH_PALACIOS_ciudadano_1657527813225.p12
+ 1646  sudo apt-get install -y ca-certificates
+ 1647  sudo cp local-ca.crt /usr/local/share/ca-certificat
+ 1648  ls
+ 1649  sudo apt install libnss3-tools
+ 1650  openssl pkcs12 -info -in Y6514718M_MARITZA\ ELIZABETH_PALACIOS_ciudadano_1657527813225.p12 -nodes
+ 1651  cd
+ 1652  source activate ubu18
+ 1653  cd catkin_ws
+ 1654  source devel/setup.bash 
+ 1655  ls
+ 1656  mpiexec -n 2 python test_g.py 
+ 1657  mpiexec -n 2 python main.py 
+ 1658  cd src/multi_robot/
+ 1659  cd nodes/
+ 1660  mpiexec -n 2 python main.py 
+ 1661  mpiexec -n 2 python main.py
+ 1662  cd 
+ 1663  cd catkin_ws
+ 1664  cd src/
+ 1665  cd multi_robot/
+ 1666  cd nodes/
+ 1667  source activate ubu18
+ 1668  cd 
+ 1669  cd catkin_ws
+ 1670  source devel/setup.bash 
+ 1671  cd src/multi_robot/nodes/
+ 1672  mpiexec -n 2 python main.py 
+ 1673  ls
+ 1674  cd
+ 1675  cd Documents/
+ 1676  ls
+ 1677  cd
+ 1678  ls
+ 1679  python test_b.py 
+ 1680  source activate ubu18
+ 1681  python
+ 1682  source activate ubu18
+ 1683  mpiexec -n 2 python test_b.py 
+ 1684  clear
+ 1685  mpiexec -n 3 python test_b.py 
+ 1686  mpiexec -n 2 python test_b.py 
+ 1687  piexec -n 2 python test_b.py 
+ 1688  mpiexec -n 2 python test_b.py 
+ 1689  mpiexec -n 2 python test_b.py ç
+ 1690  mpiexec -n 2 python test_b.py 
+ 1691  mpiexec -n 3 python test_b.py 
+ 1692  mpiexec -n 2 python test_b.py 
+ 1693  c
+ 1694  cd catkin_ws
+ 1695  source devel/setup.bash 
+ 1696  cd src/
+ 1697  ls
+ 1698  cd multi_robot/
+ 1699  ls
+ 1700  cd nodes/
+ 1701  ls
+ 1702  mpiexec -n 2 python main.py 
+ 1703  mpiexec -n 2 \python main.py 
+ 1704  mpiexec -n 2 python main.py 
+ 1705  clear
+ 1706  mpiexec -n 2 python main.py 
+ 1707  mpiexec -n 3 python main.py 
+ 1708  mpiexec -n 4 python main.py 
+ 1709  mpiexec -n 3 python main.py 
+ 1710  git status
+ 1711  gedit .gitignore
+ 1712  cd ..
+ 1713  ls -la
+ 1714  gedit .gitignore 
+ 1715  git status
+ 1716  git add -A
+ 1717  git status
+ 1718  git commit -m "losing data"
+ 1719  git push
+ 1720  cd nodes/
+ 1721  mpiexec -n 3 python main.py 
+ 1722  clear
+ 1723  mpiexec -n 3 python main.py 
+ 1724  clear
+ 1725  mpiexec -n 3 python main.py 
+ 1726  [A
+ 1727  mpiexec -n 3 python main.py 
+ 1728  clear
+ 1729  mpiexec -n 3 python main.py 
+ 1730  clear
+ 1731  mpiexec -n 3 python main.py 
+ 1732  cd ..
+ 1733  git satus
+ 1734  git status
+ 1735  git add -A
+ 1736  git commit -m "buffer"
+ 1737  git push
+ 1738  cd nodes/
+ 1739  mpiexec -n 3 python main.py 
+ 1740  cd nodes/
+ 1741  mpiexec -n 3 python main.py 
+ 1742  cd ..
+ 1743  git status
+ 1744  git add -A
+ 1745  git status
+ 1746  git commit -m "check and send properly"
+ 1747  git push
+ 1748  cd nodes/
+ 1749  git commit -m "check and send properly"
+ 1750  mpiexec -n 3 python main.py 
+ 1751  cd ..
+ 1752  git add -A
+ 1753  git commit -m "merge networks"
+ 1754  git push
+ 1755  source activate ubu18
+ 1756  cd
+ 1757  mpiexec -n 2 python test_b.py 
+ 1758  rostopic list
+ 1759  source activate ubu18
+ 1760  python
+ 1761  tail -f out
+ 1762  roscore
+ 1763  sudo apt install drawing
+ 1764  source activate ubu18
+ 1765  cd catkin_ws
+ 1766  source devel/setup.bash 
+ 1767  cd src/multi_robot/nodes/
+ 1768  mpiexec -n 3 python test_b.py 
+ 1769  mpiexec -n 3 python main.py 
+ 1770  clear
+ 1771  mpiexec -n 3 python main.py 
+ 1772  clear
+ 1773  mpiexec -n 3 python main.py 
+ 1774  clear
+ 1775  mpiexec -n 3 python main.py 
+ 1776  clear
+ 1777  mpiexec -n 3 python main.py 
+ 1778  mpiexec -n 3 python main.py
+ 1779  cd ..
+ 1780  git commit add -A
+ 1781  git add -A
+ 1782  git commit -m "second area wrong"
+ 1783  git push
+ 1784  cd nodes/
+ 1785  mpiexec -n 3 python main.py
+ 1786  mpiexec -n 3 python main.py >out
+ 1787  mpiexec -n 3 python main.py
+ 1788  cd ..
+ 1789  git add -A
+ 1790  git commit -m "merge network among areas"
+ 1791  git push
+ 1792  cd nodes/
+ 1793  clear
+ 1794  mpiexec -n 3 python main.py
+ 1795  mpiexec -n 5 python main.py
+ 1796  roslaunch multi_robot multi_agent.launch 
+ 1797  roslaunch multi_robot turtlebot3_multi.launch 
+ 1798  cd ..
+ 1799  cd
+ 1800  cd catkin_ws
+ 1801  catkin build
+ 1802  source devel/setup.bash 
+ 1803  cd src/multi_robot/
+ 1804  roslaunch multi_robot turtlebot3_multi.launch 
+ 1805  cd nodes/
+ 1806  mpiexec -n 6 python main.py
+ 1807  cd ..
+ 1808  git add -A
+ 1809  git commit -m "multi rooms and targets change ID "
+ 1810  git push 
+ 1811  cd nodes/
+ 1812  mpiexec -n 6 python main.py
+ 1813  CLEAR
+ 1814  clear
+ 1815  mpiexec -n 6 python main.py
+ 1816  clear
+ 1817  mpiexec -n 6 python main.py
+ 1818  cclear
+ 1819  clear
+ 1820  mpiexec -n 6 python main.py
+ 1821  htop
+ 1822  cd catkin_ws
+ 1823  source devel/setup.bash 
+ 1824  cd src/
+ 1825  ls
+ 1826  cd multi_robot/
+ 1827  cd nodes/
+ 1828  mpiexec -n 6 python main.py
+ 1829  source activate ubu18
+ 1830  mpiexec -n 6 python main.py
+ 1831  clear
+ 1832  mpiexec -n 6 python main.py
+ 1833  [A
+ 1834  mpiexec -n 6 python main.py
+ 1835  clear
+ 1836  mpiexec -n 6 python main.py
+ 1837  clear
+ 1838  mpiexec -n 6 python main.py
+ 1839  export OMP_NUM_THREADS=1
+ 1840  mpiexec -n 6 python main.py
+ 1841  export OMP_NUM_THREADS=1
+ 1842  mpiexec -n 6 python main.py
+ 1843  export OMP_NUM_THREADS=1
+ 1844  mpiexec -n 6 python main.py
+ 1845  m
+ 1846  sudo lshw -C display
+ 1847  ipconfig
+ 1848  ifconfig
+ 1849  lspci -vnn | grep VGA
+ 1850  lspci -k | grep -EA3 'VGA|3D|Display'
+ 1851  nvidia-settings --version
+ 1852  apt-get updtate
+ 1853  run apt-get updtate
+ 1854  apt-get updtate
+ 1855  apt-get update
+ 1856  apt-get updtate --fix-missing
+ 1857  apt-get updtate--fix-missing
+ 1858  sudo apt-get update
+ 1859  sudo ubuntu-drivers autoinstall
+ 1860  /etc/apt/sources.list
+ 1861  sudo /etc/apt/sources.list
+ 1862  sudo -i
+ 1863  sudo apt-get clean 
+ 1864  sudo ubuntu-drivers autoinstall
+ 1865  sudo apt-get clean 
+ 1866  sudo apt-get update
+ 1867  sudo ubuntu-drivers autoinstall
+ 1868  sudo rm /etc/systemd/system/systemd-hibernate.service.requires/nvidia-resume.service
+ 1869  sudo rm /etc/systemd/system/systemd-hibernate.service.requires/nvidia-hibernate.service
+ 1870  sudo rm /etc/systemd/system/systemd-suspend.service.requires/nvidia-resume.service
+ 1871  sudo rm /etc/systemd/system/systemd-suspend.service.requires/nvidia-suspend.service
+ 1872  sudo apt-get clean 
+ 1873  sudo apt-get update
+ 1874  sudo ubuntu-drivers autoinstall
+ 1875  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <PUBKEY>
+ 1876  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+ 1877  sudo apt-get update
+ 1878  sudo apt-get clean 
+ 1879  sudo apt-get update
+ 1880  sudo ubuntu-drivers autoinstall
+ 1881  sudo apt-get update
+ 1882  sudo nautilus
+ 1883  source activate ubu18
+ 1884  conda install -c anaconda tensorflow-gpu
+ 1885  mpiexec -n 6 python main.py
+ 1886  cd 
+ 1887  cd catkin_ws
+ 1888  source devel/setup.bash 
+ 1889  cd src/multi_robot/nodes/
+ 1890  mpiexec -n 6 python main.py
+ 1891  source activate ubu18
+ 1892  cd catkin_ws
+ 1893  source devel/setup.bash 
+ 1894  cd src/
+ 1895  cd multi_robot/
+ 1896  cd nodes/
+ 1897  mpiexec -n 6 python main.py
+ 1898  cd catkin_ws
+ 1899  source devel/setup.bash 
+ 1900  cd src/multi_robot/nodes/
+ 1901  mpiexec -n 6 python main.py
+ 1902  source activate ubu18
+ 1903  mpiexec -n 6 python main.py
+ 1904  nvidia-smi
+ 1905  nvidia-smi --gpu-reset
+ 1906  sudo nvidia-smi --gpu-reset
+ 1907  sudo fuser -v /dev/nvidia*
+ 1908  sudo nvidia-smi --gpu-reset
+ 1909  sudo kill -9 637
+ 1910  sudo kill -9 1553
+ 1911  sudo nvidia-smi --gpu-reset
+ 1912  sudo fuser -v /dev/nvidia*
+ 1913  cd catkin_ws
+ 1914  source devel/setup.bash 
+ 1915  source activate ubu18
+ 1916  cd src/
+ 1917  ls
+ 1918  cd multi_robot/
+ 1919  ls
+ 1920  cd nodes/
+ 1921  ls
+ 1922  ks
+ 1923  sudo nvidia-smi --gpu-reset
+ 1924  mpiexec -n 6 python main.py
+ 1925  nvidia-smi --gpu-reset -i
+ 1926  nvidia-smi --gpu-reset -isudo rmmod nvidia_uvm
+ 1927  sudo rmmod nvidia_uvm
+ 1928  sudo modprobe nvidia_uvm
+ 1929  sudo apt-get update
+ 1930  nvidia-smi --gpu-reset -isudo rmmod nvidia_uvm
+ 1931  mpiexec -n 6 python main.py
+ 1932  sudo nvidia-smi -r
+ 1933  mpiexec -n 6 python main.py
+ 1934  source activate ubu18
+ 1935  cd catkin_ws
+ 1936  source devel/setup.bash 
+ 1937  cd src/multi_robot/nodes/
+ 1938  mpiexec -n 6 python main.py
+ 1939  htop
+ 1940  nvidia-smi
+ 1941  source activate ubu18
+ 1942  pip install numba
+ 1943  conda install numba
+ 1944  python
+ 1945  cd catkin_ws
+ 1946  catkin build
+ 1947  source devel/setup.bash 
+ 1948  source activate ubu18
+ 1949  cd src/
+ 1950  ls
+ 1951  cd multi_robot/nodes/
+ 1952  mpiexec -n 6 python main.py
+ 1953  source activate ubu18
+ 1954  cd catkin_ws
+ 1955  source devel/setup.bash 
+ 1956  cd src/multi_robot/nodes/
+ 1957  mpiexec -n 6 python main.py
+ 1958  sudo apt-get update
+ 1959  mpiexec -n 6 python main.py
+ 1960  conda  install torch torchvision
+ 1961  conda install torch torchvision
+ 1962  conda install -c pytorch torchvision
+ 1963  mpiexec -n 6 python main.py
+ 1964  source activate ubu18
+ 1965  cd catkin_ws
+ 1966  source devel/setup.bash 
+ 1967  cd src/multi_robot/nodes/
+ 1968  mpiexec -n 6 python main.py
+ 1969  export OMP_NUM_THREADS=1
+ 1970  mpiexec -n 6 python main.py
+ 1971  mpiexec -n 5 python main.py
+ 1972  sudo nvidia-smi
+ 1973  nvtop
+ 1974  sudo apt install nvtop
+ 1975  conda install nvtop
+ 1976  sudo apt-get install nvtop
+ 1977  nvidia-smi
+ 1978  lsmod | grep nvidia
+ 1979  sudo rmmod nvidia_drm
+ 1980  sudo rmmod nvidia_modeset
+ 1981  sudo rmmod nvidia_uvm
+ 1982  sudo rmmod nvidia
+ 1983  nvidia-smi
+ 1984  mpiexec -n 6 python main.py
+ 1985  sudo ubuntu-drivers autoinstall
+ 1986  history
+ 1987  history > text
+ 1988  ls
+ 1989  sudo apt-get clean
+ 1990  sudo ubuntu-drivers autoinstall
+ 1991  sudo apt-get update
+ 1992  sudo ubuntu-drivers autoinstall
+ 1993  sudo apt install --fix-broken
+ 1994  sudo apt reinstall
+ 1995  sudo apt --fix-broken install
+ 1996  sudo apt-get update
+ 1997  sudo apt-get upgrade
+ 1998  sudo ubuntu-drivers autoinstall
+ 1999  source activate ubu18
+ 2000  cd catkin_ws
+ 2001  source devel/setup.bash 
+ 2002  cd src/multi_robot/nodes/
+ 2003  mpiexec -n 6 python main.py
+ 2004  history > text2

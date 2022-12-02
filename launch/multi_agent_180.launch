@@ -1,0 +1,12 @@
+<launch>
+<param name="robot_description"
+command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_burger_1cam180.urdf.xacro" />"
+<group ns="agent2">
+<param name="tf_prefix" value="agent2_tf" />
+<include file="$(find multi_robot)/launch/one_agent_1cam180.launch" >
+<arg name="init_pose" value="-x -3 -y 3 -z 0 -Y 4.13" />
+<arg name="agent_name"  value="agent2" />
+</include>
+</group>
+
+</launch>

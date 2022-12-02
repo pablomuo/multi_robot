@@ -1,0 +1,14 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="use_sim_time" value="true"/>
+    <arg name="debug" value="false"/>
+    <arg name="gui" value="true" />
+    <arg name="world_name" value="$(find multi_robot)/worlds/2rooms_small_closed.world"/>
+    <!-- <arg name="world_name" value="$(find multi_robot)/worlds/2rooms_small_open.world"/> -->
+    <!-- <arg name="world_name" value="$(find multi_robot)/worlds/2rooms_closed.world"/> -->
+  </include>
+
+  <include file="$(find multi_robot)/launch/multi_agent.launch"/>
+  <!-- <include file="$(find multi_robot)/launch/multi_agent_pa.launch"/> -->
+
+</launch>

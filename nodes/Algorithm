@@ -1,0 +1,32 @@
+* Creates a file with the specified number of robots and targets (many_robots.py)
+* Launch Gazebo robot
+* Initialization of variables
+* Initialization of different class
+* Initialize time for each robot
+* Initialize Pa for each robot
+* for each Episode in range(episodes):
+    * reset environments and Gazebo
+    * get state initial
+    * for each step in range (episode step)
+        * update step
+        * get action
+        * check if it crash it reset or not
+        * if robot crash or evolve rule:
+            * get the action
+            * Execute the action
+            * Return next state, reward, done
+        * else:
+            * Execute the action
+            * Return next state, reward, done
+        * Append memory
+        * Work out if get the goal with high reward
+        * Training
+        * Save model
+        * Time out
+        * Done
+        *Check if the agent is leader
+          * Work out distance and headings to the other agents
+          * Compare rewards to determined who is the new leader
+          * the new leader send the network to the old leader
+          * the old leader who knows all the follower send the network
+          * Discriminability-Based Transfer (DBT), which uses an information measure to estimate the utility of hyperplanes defined by source weights in the target network, and rescales transferred weight magnitudes accordingly.

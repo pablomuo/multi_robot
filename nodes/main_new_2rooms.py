@@ -39,7 +39,7 @@ global_step        = 0
 number_episode     = 15900
 positions          = []
 headings           = []
-number_rooms       = 2
+number_rooms       = 1
 number_robot       = int(size)-(number_rooms*2) #         Number of robots with TWO CLOUDS
 
 if size<=number_rooms:
@@ -64,7 +64,7 @@ if rank==0:
 
     #Delete old folders of goal_box
     os.system('rm -r /home/mcg/catkin_ws/src/multi_robot/worlds/goal_box_'+"*")
-    # os.system('rm -r /home/mcg/catkin_ws/src/multi_robot/save_model/en'+"*")
+    os.system('rm -r /home/mcg/catkin_ws/src/multi_robot/save_model/en'+"*")
     #Creates a file with the specified number of robots and targets
     os.system('python many_robots.py'+" "+str([number_robot,number_rooms]))                #cuando se usa solo una camara se debe indicar en many_robots que one lounch es
     # os.system('python many_robots_new.py'+" "+str(number_robot)+" "+str(number_rooms)+" "+str(rob1)+" "+str(rob2))
@@ -309,11 +309,11 @@ if rank<number_rooms:
     with tf.device('/cpu:0'):
     # with tf.device('/GPU:0'):
         print("nube 1, rank:", rank)
-        if rank == 0:
-            load =True
-        if rank == 1:
-            load = False
-        # load = True
+        # if rank == 0:
+        #     load =True
+        # if rank == 1:
+        #     load = False
+        load = False
         cluster=ReinforcementNetwork(state_size,action_size,number_episode,load,rank)
         step=0
         Room_member_ID=[]
@@ -419,11 +419,11 @@ if rank<number_rooms:
 if rank>number_rooms-1 and rank<number_rooms*2:          #tiene que haber un registro de los robots que hay en la nube, igual que sucede en la nube 1
     # with tf.device('/cpu:1'):
     print("nube 2, rank:", rank)
-    if rank == 2:
-        load = True
-    if rank == 3:
-        load = False
-    # load = True
+    # if rank == 2:
+    #     load = True
+    # if rank == 3:
+    #     load = False
+    load = False
     cluster2=ReinforcementNetwork(state_size,action_size,number_episode,load,rank-number_rooms)
 
     # state_initial = comm.recv(source=2, tag=121)

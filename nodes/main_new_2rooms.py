@@ -322,7 +322,7 @@ if rank<number_rooms:
             if rank == 1:
                 load = False
         elif number_rooms == 1:
-            load = True
+            load = False
         cluster=ReinforcementNetwork(state_size,action_size,number_episode,load,rank)
         step=0
         Room_member_ID=[]
@@ -434,7 +434,7 @@ if rank>number_rooms-1 and rank<number_rooms*2:          #tiene que haber un reg
         if rank == 3:
             load = False
     elif number_rooms == 1:
-        load = True
+        load = False
     cluster2=ReinforcementNetwork(state_size,action_size,number_episode,load,rank-number_rooms)
 
     # state_initial = comm.recv(source=2, tag=121)

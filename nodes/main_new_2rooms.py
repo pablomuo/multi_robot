@@ -36,7 +36,7 @@ episodes           = 19000
 episode_step       = 60000
 e                  = 0
 global_step        = 0
-number_episode     = 15900
+number_episode     = 15000
 positions          = []
 headings           = []
 number_rooms       = 1
@@ -63,8 +63,8 @@ data2=None
 if rank==0:
 
     #Delete old folders of goal_box
-    os.system('rm -r /home/mcg/catkin_ws/src/multi_robot/worlds/goal_box_'+"*")
-    os.system('rm -r /home/mcg/catkin_ws/src/multi_robot/save_model/en'+"*")
+    # os.system('rm -r /home/mcg/catkin_ws/src/multi_robot/worlds/goal_box_'+"*")
+    # os.system('rm -r /home/mcg/catkin_ws/src/multi_robot/save_model/en'+"*")
     #Creates a file with the specified number of robots and targets
     os.system('python many_robots.py'+" "+str([number_robot,number_rooms]))                #cuando se usa solo una camara se debe indicar en many_robots que one lounch es
     # os.system('python many_robots_new.py'+" "+str(number_robot)+" "+str(number_rooms)+" "+str(rob1)+" "+str(rob2))
@@ -134,13 +134,20 @@ if rank>((number_rooms*2)-1):
             # Gets the initial state  (scan_data + [heading, current_distance,
             # wall_dist,goal_heading_initial])
             print("1. Reset position robots", robot_rank)
-
-            print("PA viejo", agents.learning.Pa)
             for step in range(episode_step):
 
-                c2_pa = comm.recv(source=room_ID_c2, tag=211+room_ID_c2*1000)                #verrrrrrrrr
-                agents.learning.Pa = c2_pa
-                print("PA", agents.learning.Pa)
+
+                if comm.Iprobe(source=room_ID_c2,tag=211+room_ID_c2*1000):
+                    c2_pa = comm.recv(source=room_ID_c2, tag=211+room_ID_c2*1000)
+                    agents.learning.Pa = c2_pa
+                    sys.stdout.flush()
+                    c2_pbest = comm.recv(source=room_ID_c2, tag=411+room_ID_c2*1000)
+                    agents.learning.Pbest = c2_pbest
+                    sys.stdout.flush()
+
+                # print("PA", agents.learning.Pa)
+                # print("Pbest", agents.learning.Pbest)
+
                 agents.step = step
                 # If the agent has a Pa (level of knowledge) > normal proces
                 # (ability to execute backward action). Each collision ends
@@ -309,11 +316,13 @@ if rank<number_rooms:
     with tf.device('/cpu:0'):
     # with tf.device('/GPU:0'):
         print("nube 1, rank:", rank)
-        # if rank == 0:
-        #     load =True
-        # if rank == 1:
-        #     load = False
-        load = False
+        if number_rooms == 2:
+            if rank == 0:
+                load =True
+            if rank == 1:
+                load = False
+        elif number_rooms == 1:
+            load = True
         cluster=ReinforcementNetwork(state_size,action_size,number_episode,load,rank)
         step=0
         Room_member_ID=[]
@@ -419,11 +428,13 @@ if rank<number_rooms:
 if rank>number_rooms-1 and rank<number_rooms*2:          #tiene que haber un registro de los robots que hay en la nube, igual que sucede en la nube 1
     # with tf.device('/cpu:1'):
     print("nube 2, rank:", rank)
-    # if rank == 2:
-    #     load = True
-    # if rank == 3:
-    #     load = False
-    load = False
+    if number_rooms == 2:
+        if rank == 2:
+            load =True
+        if rank == 3:
+            load = False
+    elif number_rooms == 1:
+        load = True
     cluster2=ReinforcementNetwork(state_size,action_size,number_episode,load,rank-number_rooms)
 
     # state_initial = comm.recv(source=2, tag=121)
@@ -438,6 +449,12 @@ if rank>number_rooms-1 and rank<number_rooms*2:          #tiene que haber un reg
             Room_member_ID_cloud2.append(member_ID_cloud2)
             print("24.0 ROBOT before merge ANOTHER CLOUD 2 AREA"+str(rank-number_rooms)+": ", Room_member_ID_cloud2)
             sys.stdout.flush()
+            print("PA NUBE 2 envia",cluster2.Pa)
+            for n_rob in Room_member_ID_cloud2:
+                comm.send(cluster2.Pa,dest=n_rob,tag=211+rank*1000)    #enviamos el  PA
+                sys.stdout.flush()
+                comm.send(cluster2.Pbest,dest=n_rob,tag=411+rank*1000)    #enviamos el  PA
+                sys.stdout.flush()
 
         # Unsubscribe from room
         while comm.Iprobe(source=MPI.ANY_SOURCE,tag=91+rank*1000):
@@ -452,7 +469,8 @@ if rank>number_rooms-1 and rank<number_rooms*2:          #tiene que haber un reg
         for n_robot in Room_member_ID_cloud2:
             # get accion of neuronal network or call evolve rule (path planning Algorithm)
             # print("nube 2 del room "+str(rank-number_rooms)+"recibe estado", n_robot)
-            comm.send(cluster2.Pa,dest=n_robot,tag=211+rank*1000)    #enviamos el  PA
+
+            # comm.send(cluster2.Pa,dest=n_robot,tag=211+rank*1000)    #enviamos el  PA
 
             state_initial = comm.recv(source=n_robot, tag=125+rank*1000)
             sys.stdout.flush()

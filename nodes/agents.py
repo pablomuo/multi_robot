@@ -54,7 +54,8 @@ class Agent(object):
         self.theta_1= 0
         self.__status                     = "follower"
         self.reward                       =0
-        self.load                         =random.choice([False,False,False])
+        # self.load                         =random.choice([False,False,False])
+        self.load                         = False
         self.step                         = 0
         self.__process                  = "driving_to_goal"
         self.number_action              = action_size

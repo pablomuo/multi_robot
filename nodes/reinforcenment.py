@@ -70,7 +70,7 @@ class ReinforcementNetwork(object):
             self.target_model         = self.target_network()
 
     def load_mode(self):
-        with open(self.dirPath+str(self.load_episode)+'.json') as outfile:
+        with open(self.dirPath+str(self.load_episode)+'_'+str(self.rank_cloud)+'.json') as outfile:
             param = json.load(outfile)
             Pa = param.get('Pa')
             Pbest = param.get('Pbest')
@@ -267,7 +267,7 @@ class ReinforcementNetwork(object):
         param_keys = ['Pa','Pbest']
         param_values = [self.Pa, self.Pbest]
         param_dictionary = dict(zip(param_keys, param_values))
-        with open(self.dirPath + str(e) + '.json', 'w') as outfile:
+        with open(self.dirPath + str(e) +'_'+str(self.rank_cloud)+ '.json', 'w') as outfile:
             json.dump(param_dictionary, outfile)
 
     def experience_replay(self):
